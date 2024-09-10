@@ -13,7 +13,9 @@ import img11 from '../../assets/Qcent.png';
 import img12 from '../../assets/smartworld.png';
 import img13 from '../../assets/vikalps.gif';
 import img14 from '../../assets/centurion.jpg';
-
+import img15 from '../../assets/Sophos.png';
+import img16 from '../../assets/lenovo.png';
+import img17 from '../../assets/Dlink.png';
 
 
 const images = [
@@ -31,13 +33,16 @@ const images = [
     { id: 12, src: img12, title: 'Image 12', description: 'Description 3' },
     { id: 13, src: img13, title: 'Image 13', description: 'Description 3' },
     { id: 14, src: img14, title: 'Image 14', description: 'Description 3' },
+    { id: 15, src: img15, title: 'Image 15', description: 'Description 3' },
+    { id: 16, src: img16, title: 'Image 16', description: 'Description 3' },
+    { id: 17, src: img17, title: 'Image 17', description: 'Description 3' },
   ];
 
 function PartnerCompany() {
     return (
        
         <div className=' items-center justify-center text-center bg-gradient-to-r from-gray-300 to-gray-200 p-8'>
-         <h1 className='text-gray-800 text-center text-6xl font-semibold'><ins>Our Trusted Partners</ins></h1>
+         <h1 className='text-gray-700 text-center text-6xl font-semibold'><ins>Our Trusted Partners</ins></h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-1 my-14 mx-28">
         {images.map((image) => (
           <div key={image.id} className="relative">
@@ -46,10 +51,6 @@ function PartnerCompany() {
               alt={image.title}
               className="w-[60vh] h-[30vh] bg-white shadow-lg p-8"
             />
-            {/* <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
-              <h2 className="text-lg font-semibold">{image.title}</h2>
-              <p className="text-sm">{image.description}</p>
-            </div> */}
           </div>
         ))}
       </div>

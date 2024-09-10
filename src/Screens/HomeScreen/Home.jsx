@@ -8,30 +8,14 @@ import Connects from "../../components/Home/Connects"
 
 const Home = () => {
   return (
-    <>
     <div className="pt-20 font-custom overflow-hidden" >
-      
-        <div>
-          <ImageSlider />
-        </div>
-        <div>
+       <ImageSlider />
           <Aemp />
-        </div>
-        <div>
           <Solution />
-        </div>
-        <div>
           <Model/>
-        </div>
-        <div>
           <Clients/>
-        </div>
-        <div>
-          <Connects/>
-        </div>
-        </div>
-      
-    </>
+          <Connects/> 
+    </div>
   );
 };
 

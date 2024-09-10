@@ -34,18 +34,18 @@ const QuickLinks = () => {
               About
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="#"
               onClick={(e) => {
                 e.preventDefault();
-                navigate('/careers');
+                navigate('/contact');
               }}
               className="hover:text-teal-500"
             >
               Careers
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="#"

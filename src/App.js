@@ -5,7 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Screens/HomeScreen/Home";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
-import Event from "./components/Showcase/Showcase";
+import Product from "./components/Product/Product"; 
+import Events from "./components/Showcase/Showcase";
 import Contact from "./components/Contact/Contact";
 import Partner from "./components/Partner/Partner";
 import FAQ from "./Screens/Footer/FAQ";
@@ -27,7 +28,8 @@ function App() {
         <Route path="/" Component={Home} />
         <Route path="/about" Component={About} />
         <Route path="/services" Component={Services} />
-        <Route path="/event" Component={Event} />
+        <Route path="/product" Component={Product}/>
+        <Route path="/event" Component={Events} />
         <Route path="/contact" Component={Contact} />
         <Route path="/partner" Component={Partner}/>
         <Route path="/faq" Component={FAQ}/>
