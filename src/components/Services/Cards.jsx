@@ -1,5 +1,5 @@
 import React from "react";
-import App from "../../assets/App.jfif";
+import App from "../../assets/App.jpeg";
 import migration from "../../assets/migration.jpg";
 import appmng from "../../assets/appmng.jpeg";
 import SAP from "../../assets/SAP.jfif";

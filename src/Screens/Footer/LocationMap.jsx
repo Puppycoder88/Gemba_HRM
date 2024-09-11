@@ -3,7 +3,7 @@ import React from 'react';
 const LocationMap = () => {
   return (
     <div className="container mx-auto">
-      <h2 className="text-2xl font-bold text-slate-800 text-center">Location Map</h2>
+      <h2 className="text-2xl font-bold text-slate-800 ">Location Map</h2>
       <div className="w-full h-52 mt-4 md:h-52 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
         <iframe
           title="location-map"

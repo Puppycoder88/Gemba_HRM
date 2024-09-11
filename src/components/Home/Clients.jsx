@@ -21,7 +21,7 @@ const Clients = () => {
     <div className="px-6 py-10">
       <div className="bg-gray-100 rounded-xl w-full justify-center items-center text-center">
         <h1 className="text-4xl font-bold p-8 text-gray-700 text-center">
-          Hear from our happy and satisfied <i>clients</i>
+          Hear from our happy and satisfied clients
         </h1>
 
         {/* Connect the slider ref */}

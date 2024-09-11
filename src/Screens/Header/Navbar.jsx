@@ -73,7 +73,7 @@ const Navbar = () => {
                   to="/about"
                   activeClassName="bg-white"
                 >
-                  About
+                  About Us
                 </NavLink>
                 
                 <NavLink
@@ -92,13 +92,6 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink
                   className="p-2 rounded transition duration-500 ease-in-out transform hover:-translate-y-2 flex items-center"
-                  to="/contact"
-                  activeClassName="bg-white"
-                >
-                  Contact
-                </NavLink>
-                <NavLink
-                  className="p-2 rounded transition duration-500 ease-in-out transform hover:-translate-y-2 flex items-center"
                   to="/event"
                   activeClassName="bg-white"
                 >
@@ -110,6 +103,13 @@ const Navbar = () => {
                   activeClassName="bg-white"
                 >
                   Partners
+                </NavLink>
+                <NavLink
+                  className="p-2 rounded transition duration-500 ease-in-out transform hover:-translate-y-2 flex items-center"
+                  to="/contact"
+                  activeClassName="bg-white"
+                >
+                  Contact
                 </NavLink>
               </div>
               <a

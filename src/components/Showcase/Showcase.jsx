@@ -1,5 +1,6 @@
 import React from 'react';
 import eventimg from '../../assets/eventimg.jpg';
+import PictureGrid from './PictureCards';
 
 
 const showcase = () => {
@@ -24,7 +25,7 @@ const showcase = () => {
         </div>
       </div>
     </div>
-
+    <PictureGrid/>
 
     </div>
    

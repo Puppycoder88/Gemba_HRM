@@ -38,8 +38,8 @@ const products = [
       }
   ];
   
-  const ProductCard = ({ icon, title, description, link }) => (
-    <div className="bg-white p-6 shadow-lg text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl rounded-tl-2xl rounded-br-2xl ">
+  const ProductCard = ({ icon, title, description }) => (
+    <div className="bg-white p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl rounded-tl-2xl rounded-br-2xl ">
     <div className="mb-4 items-center">{icon}</div>
     <h3 className="text-xl font-semibold mb-4">{title}</h3>
     <p className="text-gray-600 mb-6">{description}</p>
@@ -49,9 +49,9 @@ const products = [
   const ProductGrid = () => {
     return (
         <div className='bg-gradient-to-b from-gray-100 to-slate-200 pb-10'>
-        <div className="bg-gray-100  w-full justify-center items-center text-center">
+        <div className="bg-gray-100  w-full">
             <h1 className="text-4xl font-bold p-6 text-gray-700 text-center">Our Ever-Growing Products</h1>
-            <p className="bg-gradient-to-b from-gray-100 to-slate-200 px-6 text-center text-gray-600">Our diverse range of solutions spans across various key business functions, including Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Inventory Management, Assets Management, HRMS, and Healthcare Management. Each tool is designed to seamlessly integrate into your operations, providing a unified platform that improves visibility, automates tasks, and reduces inefficiencies. By streamlining workflows and offering real-time insights, our solutions empower businesses to make informed decisions, optimize processes, and enhance overall productivity across all departments.
+            <p className="bg-gradient-to-b from-gray-100 to-slate-200 text-gray-600 px-6">Our diverse range of solutions spans across various key business functions, including Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Inventory Management, Assets Management, HRMS, and Healthcare Management. Each tool is designed to seamlessly integrate into your operations, providing a unified platform that improves visibility, automates tasks, and reduces inefficiencies. By streamlining workflows and offering real-time insights, our solutions empower businesses to make informed decisions, optimize processes, and enhance overall productivity across all departments.
 </p>
             </div>
             

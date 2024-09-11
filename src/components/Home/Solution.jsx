@@ -58,11 +58,11 @@ const solutions = [
   ];
   
   const SolutionCard = ({ icon, title, description, link }) => (
-    <div className="bg-white p-6 shadow-lg text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl rounded-tl-2xl rounded-br-2xl ">
+    <div className="bg-white p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl rounded-tl-2xl rounded-br-2xl ">
     <div className="mb-4">{icon}</div>
     <h3 className="text-xl font-semibold mb-4">{title}</h3>
     <p className="text-gray-600 mb-6">{description}</p>
-    <a href={link} className="text-blue-600 font-semibold flex items-center justify-center transition-colors duration-300 hover:text-blue-800">
+    <a href={link} className="text-red-500 font-semibold flex items-center justify-center transition-colors duration-300 hover:text-red-600">
       Know More<span className="ml-2">→</span>
     </a>
   </div>

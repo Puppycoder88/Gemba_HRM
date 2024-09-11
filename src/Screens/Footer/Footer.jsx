@@ -31,7 +31,7 @@ const Footer = () => {
 
           {/* Connect with Us  */}
           <div>
-            <h3 className="text-2xl text-center font-bold text-slate-800">
+            <h3 className="text-2xl font-bold text-slate-800">
               Connect with Us
             </h3>
             <div>
@@ -63,10 +63,10 @@ const Footer = () => {
                 sales-team@gembainfotech.com
               </p>
               <div className="mt-4">
-                <h3 className="text-2xl font-bold text-slate-800 text-center">Follow Us</h3>
+                <h3 className="text-2xl font-bold text-slate-800 ">Follow Us</h3>
                 <p className="pt-2 text-2xl">
                   <a href="https://www.linkedin.com/company/gemba-infotech/" className="text-blue-700 hover:text-teal-500 ">
-                    <FaLinkedin className="text-center m-auto" />
+                    <FaLinkedin />
                   </a>
                 </p>
               </div>
