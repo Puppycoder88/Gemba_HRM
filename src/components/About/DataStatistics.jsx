@@ -67,45 +67,42 @@ const Statistics = () => {
   }, []);
 
   return (
-    <div className="bg-white py-16 px-4 mx-12  rounded-3xl shadow-lg delay-1000">
-      <div className="max-w-4xl mx-auto px-2 flex justify-between">
-        <div className="text-center">
-          <h2 className="text-5xl font-bold text-blue-500">{projectsDone}+</h2>
-          <p className="mt-2 text-md font-semibold text-gray-700">
-            <span className="inline-block w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-            PROJECTS DONE
-          </p>
-          
-        </div>
-
-        <div className="text-center">
-          <h2 className="text-5xl font-bold text-blue-500">{qualifiedStaff}+</h2>
-          <p className="mt-2 text-md font-semibold text-gray-700">
-            <span className="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-            QUALIFIED STAFF
-          </p>
-          
-        </div>
-
-        <div className="text-center">
-          <h2 className="text-5xl font-bold text-blue-500">{services}+</h2>
-          <p className="mt-2 text-md font-semibold text-gray-700">
-            <span className="inline-block w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-            SERVICES
-          </p>
-          
-        </div>
-
-        <div className="text-center">
-          <h2 className="text-5xl font-bold text-blue-500">{happyClients}+</h2>
-          <p className="mt-2 text-md font-semibold text-gray-700">
-            <span className="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-            HAPPY CLIENTS
-          </p>
-          
-        </div>
-      </div>
+    <div className="bg-white py-16 px-4 mx-4 sm:mx-6 rounded-3xl shadow-lg delay-1000">
+  <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="text-center">
+      <h2 className="text-4xl md:text-5xl font-bold text-blue-500">{projectsDone}+</h2>
+      <p className="mt-2 text-md font-semibold text-gray-700">
+        <span className="inline-block w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+        PROJECTS DONE
+      </p>
     </div>
+
+    <div className="text-center">
+      <h2 className="text-4xl md:text-5xl font-bold text-blue-500">{qualifiedStaff}+</h2>
+      <p className="mt-2 text-md font-semibold text-gray-700">
+        <span className="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+        QUALIFIED STAFF
+      </p>
+    </div>
+
+    <div className="text-center">
+      <h2 className="text-4xl md:text-5xl font-bold text-blue-500">{services}+</h2>
+      <p className="mt-2 text-md font-semibold text-gray-700">
+        <span className="inline-block w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+        SERVICES
+      </p>
+    </div>
+
+    <div className="text-center">
+      <h2 className="text-4xl md:text-5xl font-bold text-blue-500">{happyClients}+</h2>
+      <p className="mt-2 text-md font-semibold text-gray-700">
+        <span className="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+        HAPPY CLIENTS
+      </p>
+    </div>
+  </div>
+</div>
+
   );
 };
 

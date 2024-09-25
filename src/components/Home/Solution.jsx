@@ -5,7 +5,7 @@ import { TbUserDollar } from "react-icons/tb";
 import { FaUsersGear } from "react-icons/fa6";
 
 
-const solutions = [
+ const solutions = [
     {
       icon: <FaCode size={40} className="text-green-500" />,
       title: "Application Development",
@@ -58,7 +58,7 @@ const solutions = [
   ];
   
   const SolutionCard = ({ icon, title, description, link }) => (
-    <div className="bg-white p-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl rounded-tl-2xl rounded-br-2xl ">
+    <div className="bg-white p-6 mx-2 lg:mx-0 lg:mb-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl rounded-tl-2xl rounded-br-2xl ">
     <div className="mb-4">{icon}</div>
     <h3 className="text-xl font-semibold mb-4">{title}</h3>
     <p className="text-gray-600 mb-6">{description}</p>
@@ -70,14 +70,14 @@ const solutions = [
   
   const SolutionsGrid = () => {
     return (
-        <div className=" px-6 pt-10 ">
-            <h1 className="text-blue-800 font-bold text-lg">WHAT WE DO ?</h1>
+        <div className=" px-4 sm:px-6 pt-10 ">
+            <h1 className="text-blue-800 font-bold text-base lg:text-lg">WHAT WE DO ?</h1>
             <hr/>
             
-            <p className="font-bold text-gray-700 text-4xl my-4">Transforming Ideas into Digital Realities</p>
+            <p className="font-bold text-gray-700 text-2xl sm:text-3xl lg:text-4xl my-4">Transforming Ideas into Digital Realities</p>
             
       <div className="bg-gray-100 py-10 ">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-col-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {solutions.map((service, index) => (
             <div
             key={index}

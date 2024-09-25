@@ -28,14 +28,14 @@ const ERP_Data = [
   ];
 
 const Card = ({ title, description }) => (
-  <div className="w-full sm:w-[400px] h-[216px] bg-slate-200 p-4 rounded-lg shadow-lg">
-    <h2 className="text-2xl font-semibold text-white bg-cardColor font-custom my-2 h-[70px] text-center items-center justify-center-">{title}</h2>
-    <p className="text-gray-600 my-2">{description}</p>
+  <div className="w-full sm:w-[400px] lg:w-[400px] h-[216px] bg-slate-200 p-4 sm:p-5 rounded-lg">
+  <h2 className="text-xl sm:text-2xl font-semibold text-white bg-cardColor font-custom p-2 h-[70px] text-center items-center justify-center">{title}</h2>
+    <p className="mt-4 sm:mt-5 text-gray-600 text-base">{description}</p>
   </div>
 );
 
 const ERPData = () => (
-  <div className="flex flex-wrap items-center justify-between gap-4 mx-6 mt-5 mb-10">
+  <div className="flex flex-wrap items-center justify-between gap-4 mx-4 sm:mx-6 lg:mx-8 mt-5 mb-10">
     {ERP_Data.map((card, index) => (
       <Card key={index} title={card.title} description={card.description} />
     ))}

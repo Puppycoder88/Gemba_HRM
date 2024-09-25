@@ -42,8 +42,8 @@ const FunctionalSupport = () => {
 
   return (
     <div>
-      <div className="w-full mx-auto my-8 text-center max-w-[600px] ">
-        <div className="text-4xl font-bold text-gray-800">
+      <div className="w-full lg:mx-auto px-4 md:px-6 my-8 sm:text-start lg:text-center max-w-[600px] ">
+        <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800">
           Functional Support Services
         </div>
         <div className="text-gray-600 my-2 ">
@@ -54,17 +54,17 @@ const FunctionalSupport = () => {
           ensuring maximum efficiency and effectiveness.
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-between gap-4 mx-6 ">
+      <div className="flex flex-wrap items-center justify-between gap-4 mx-4 sm:mx-6 lg:mx-8 mt-5 mb-10">
         {services.map((service) => (
           <div
             key={service.id}
-            className="w-full sm:w-[400px] h-[200px] bg-slate-200 p-5 rounded-lg shadow-lg"
+            className="w-full sm:w-[400px] lg:w-[400px] h-[216px] bg-slate-200 p-4 sm:p-5 rounded-lg"
           >
             <div>
-              <h3 className="text-2xl font-semibold text-white bg-cardColor font-custom p-2 h-[70px] text-center items-center justify-center">
+              <h3 className="text-xl sm:text-2xl font-semibold text-white bg-cardColor font-custom p-2 h-[70px] text-center items-center justify-center">
                 {service.title}
               </h3>
-              <p className="mt-5 text-gray-600">{service.description}</p>
+              <p className="mt-4 sm:mt-5 text-gray-600 text-base">{service.description}</p>
             </div>
           </div>
         ))}

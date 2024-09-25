@@ -10,7 +10,7 @@ const BrochureCard = () => {
         <p className="text-md mb-2">Just starting out?</p>
         <h2 className="text-xl font-bold mb-4">Download a company brochure</h2>
         <a 
-          href='/assets/Brochure.pdf' // Correct path to public folder
+          href='/assets/Brochure.pdf'
           download='Brochure.pdf' 
           className="bg-white text-blue-500 hover:bg-red-500 hover:text-white font-semibold py-2 px-2 rounded-3xl flex items-center justify-center"
         >

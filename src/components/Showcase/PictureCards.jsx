@@ -44,19 +44,20 @@ const PictureCard = ({ image, title }) => {
 const PictureGrid = () => {
   return (
     <div className="bg-gradient-to-b from-gray-100 to-slate-200 pb-10">
-      <div className="bg-gray-100 w-full justify-center items-center text-center">
-        <h1 className="text-5xl font-semibold p-6 text-gray-700 text-center hover:underline">Our Memory Wall</h1>
+      <div className=" w-full justify-center items-center text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold p-6 text-gray-700 text-center hover:underline">Our Memory Wall</h1>
       </div>
 
-      <div className="bg-gray-200 py-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center">
-          {picture.map((Picture, index) => (
-            <div key={index} className="w-[400px]">
-              <PictureCard {...Picture} /> {/* Removed redundant key */}
-            </div>
-          ))}
-        </div>
+      <div className=" py-4 px-4 sm:px-6">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center">
+    {picture.map((Picture, index) => (
+      <div key={index} className="w-full sm:w-[300px] md:w-[350px] lg:w-[400px]">
+        <PictureCard {...Picture} />
       </div>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 };

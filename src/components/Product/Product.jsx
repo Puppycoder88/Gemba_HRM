@@ -9,7 +9,7 @@ const Product = () => {
   return (
     <div className='pt-20 '>
         <div
-      className="h-[65vh] top-0 relative"
+      className="h-[50vh] md:h-[60vh] lg:h-[65vh] top-0 relative"
       style={{
         backgroundImage: `url(${img10})`,
         backgroundSize: "cover",
@@ -17,20 +17,19 @@ const Product = () => {
         backgroundPosition: "bottom",
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col">
-        <div className="px-12 py-40 contrast-200 h-[65vh]">
-          <h1 className="text-6xl font-bold text-white animate-slideInLeft">
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center">
+        <div className="px-4 sm:px-6 pt-32 sm:py-36 md:py-40 contrast-200 h-full">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white animate-slideInLeft">
           One Platform, Endless Possibilities-</h1>
-            <h2 className=" text-6xl font-bold animate-slideInRight text-green-600">
+            <h2 className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold animate-slideInRight text-green-600">
             ERP to Healthcare 
             </h2>
-         
         </div>
       </div>
     </div>
     <ProductGrid/>
     <div
-    className="h-[65vh] top-0 relative"
+    className="h-[50vh] sm:h-[60vh] lg:h-[65vh] top-0 relative"
     style={{
       backgroundImage: `url(${productConnect})`,
       backgroundSize: "cover",
@@ -38,10 +37,14 @@ const Product = () => {
       backgroundPosition: "center",
     }}
   >
-    <div className="px-8 py-32 contrast-200 bg-black bg-opacity-50 h-[65vh]">
-  <div className="flex justify-between ">
-    <p className="text-6xl font-bold text-start text-white ">Connect with Our <br /><span className="text-green-600">Experts</span></p>
-    <button className=" my-12 bg-blue-700 hover:bg-blue-900 flex text-center text-white rounded-3xl w-40 h-12 font-semibold items-center justify-evenly"> <NavLink to="/contact" > Contact Us </NavLink> <FaArrowRightLong className=" text-xl"/></button>
+    <div className="px-4 sm:px-6 py-20 md:pt-20 bg-black bg-opacity-25 h-full">
+  <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+    <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">Connect with Our <br /><span className="text-green-600">Experts</span></p>
+
+    <button className="mt-8 md:mt-0 bg-blue-700 hover:bg-blue-900 text-white rounded-3xl w-36 h-10 md:w-40 md:h-12 font-semibold flex items-center justify-evenly">
+            <NavLink to="/contact">Get Started</NavLink>
+            <FaArrowRightLong className="text-lg md:text-xl" />
+          </button>
   </div>
   </div>
   </div>

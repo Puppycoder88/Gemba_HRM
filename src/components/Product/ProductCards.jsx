@@ -49,24 +49,25 @@ const products = [
   const ProductGrid = () => {
     return (
         <div className='bg-gradient-to-b from-gray-100 to-slate-200 pb-10'>
-        <div className="bg-gray-100  w-full">
-            <h1 className="text-4xl font-bold p-6 text-gray-700 text-center">Our Ever-Growing Products</h1>
-            <p className="bg-gradient-to-b from-gray-100 to-slate-200 text-gray-600 px-6">Our diverse range of solutions spans across various key business functions, including Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Inventory Management, Assets Management, HRMS, and Healthcare Management. Each tool is designed to seamlessly integrate into your operations, providing a unified platform that improves visibility, automates tasks, and reduces inefficiencies. By streamlining workflows and offering real-time insights, our solutions empower businesses to make informed decisions, optimize processes, and enhance overall productivity across all departments.
+        <div className="bg-gray-100 w-full">
+            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold px-4 sm:px-6 py-6 text-gray-700 text-start lg:text-center">Our Ever-Growing Products</h1>
+            <p className="bg-gradient-to-b from-gray-100 to-slate-200 text-gray-600 px-4 sm:px-6 text-start">Our diverse range of solutions spans across various key business functions, including Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Inventory Management, Assets Management, HRMS, and Healthcare Management. Each tool is designed to seamlessly integrate into your operations, providing a unified platform that improves visibility, automates tasks, and reduces inefficiencies. By streamlining workflows and offering real-time insights, our solutions empower businesses to make informed decisions, optimize processes, and enhance overall productivity across all departments.
 </p>
             </div>
             
-      <div className="bg-gray-200 py-6 ">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center">
-          {products.map((Product, index) => (
-            <div
-            key={index}
-            className="w-[400px] transform translate-y-4 animate-fadeInUp delay-[100ms] "
-          >
-            <ProductCard key={index} {...Product} />
-            </div>
-          ))}
-        </div>
+            <div className="bg-gray-200 py-6 px-4 md:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center">
+    {products.map((Product, index) => (
+      <div
+        key={index}
+        className="w-full md:w-[350px] lg:w-[400px] transform translate-y-4 animate-fadeInUp delay-[100ms]"
+      >
+        <ProductCard key={index} {...Product} />
       </div>
+    ))}
+  </div>
+</div>
+
       </div>
     );
   };

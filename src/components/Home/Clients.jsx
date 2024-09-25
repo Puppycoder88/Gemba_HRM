@@ -3,8 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { RiDoubleQuotesL } from "react-icons/ri";
-import { RiDoubleQuotesR } from "react-icons/ri";
 
 const Clients = () => {
   // Create a ref for the slider
@@ -18,26 +16,27 @@ const Clients = () => {
   };
 
   return (
-    <div className="px-6 py-10">
+    <div className="px-4 sm:px-6 py-10">
       <div className="bg-gray-100 rounded-xl w-full justify-center items-center text-center">
-        <h1 className="text-4xl font-bold p-8 text-gray-700 text-center">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold p-8 text-gray-700 text-center">
           Hear from our happy and satisfied clients
         </h1>
 
         {/* Connect the slider ref */}
-        <Slider ref={sliderRef} {...settings} className="mx-12">
-        
+        <Slider
+          ref={sliderRef}
+          {...settings}
+          className="mx-12 sm:gap-2 md:gap-4 "
+        >
           <div className="bg-white p-8 rounded-md shadow-lg w-full max-w-4xl">
             <p className="text-gray-600 flex items-start">
-              <RiDoubleQuotesL className="font-bold text-2xl " />
               <span>
-                Gemba InfoTech went above and beyond to understand our
+                "Gemba InfoTech went above and beyond to understand our
                 requirements and delivered SAP Solutions exceeding our
                 expectations. Most importantly, they were always responsive to
                 us and were relentless in seeing the job being completed to our
-                satisfaction. Good job!
+                satisfaction. Good job!"
               </span>
-              <RiDoubleQuotesR className="font-bold text-2xl translate-y-11 -translate-x-64" />
             </p>
 
             <div className="mt-6">
@@ -49,19 +48,23 @@ const Clients = () => {
           </div>
 
           <div className="bg-white p-8 rounded-md shadow-lg w-full max-w-4xl">
-  <p className="text-gray-600 flex items-start">
-    <RiDoubleQuotesL className="font-bold text-2xl" />
-    <span>
-      Gemba InfoTech went above and beyond to understand our requirements and delivered SAP Solutions exceeding our expectations. Most importantly, they were always responsive to us and were relentless in seeing the job being completed to our satisfaction. Good job!
-    </span>
-    <RiDoubleQuotesR className="font-bold text-2xl translate-y-11 -translate-x-64" />
-  </p>
+            <p className="text-gray-600 flex items-start">
+              <span>
+                "Gemba InfoTech went above and beyond to understand our
+                requirements and delivered SAP Solutions exceeding our
+                expectations. Most importantly, they were always responsive to
+                us and were relentless in seeing the job being completed to our
+                satisfaction. Good job!"
+              </span>
+            </p>
 
-  <div className="mt-6">
-    <p className="text-xl font-bold text-gray-800">MOHD KAISHULLA</p>
-    <p className="text-gray-600">Chief Information Officer (CIO) IT</p>
-  </div>
-</div>
+            <div className="mt-6">
+              <p className="text-xl font-bold text-gray-800">MOHD KAISHULLA</p>
+              <p className="text-gray-600">
+                Chief Information Officer (CIO) IT
+              </p>
+            </div>
+          </div>
         </Slider>
 
         {/* Arrow Buttons */}

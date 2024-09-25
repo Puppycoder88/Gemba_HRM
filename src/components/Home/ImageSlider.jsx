@@ -23,21 +23,26 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="h-[65vh] top-0 transform shadow-md relative" >
-      <Slider {...settings} className="w-full h-[65vh]">
+    <div className="h-[50vh] sm:h-[65vh] lg:h-[80vh] top-0 transform shadow-md relative">
+      <Slider {...settings} className="w-full h-[50vh] sm:h-[65vh] lg:h-[80vh]">
         {images.map((image, index) => (
-          <div key={index} className="h-[65vh]">
-            <img src={image.src} alt={image.alt} className="w-full h-[65vh] object-cover" />
+          <div key={index} className="h-[50vh] sm:h-[65vh] lg:h-[80vh]">
+            <img src={image.src} alt={image.alt} className="w-full h-[50vh] sm:h-[65vh] lg:h-[80vh] object-cover" />
           </div>
         ))}
       </Slider>
-      <div className="absolute top-0 w-full h-[65vh] bg-black bg-opacity-40 flex flex-col ">
-        <div className="px-12 py-40 contrast-200 ">
-          <h1 className="text-white text-6xl font-bold animate-slideInLeft">Empowering  You </h1> 
-        <h2 className="text-6xl font-bold pb-3 animate-slideInRight text-white">  to Build <span className="text-green-600 ">with Ease</span></h2>
-          <p className="text-white font-semibold text-xl animate-slideInLeft">Thriving Together in the Future You Create</p>
-      
-      </div>
+      <div className="absolute top-0 w-full h-[50vh] sm:h-[65vh] lg:h-[80vh] bg-black bg-opacity-40 flex flex-col justify-center items-start">
+        <div className="px-4 pt-16 sm:px-8 sm:pt-20 md:px-12 md:py-40">
+          <h1 className="text-white text-3xl sm:text-5xl lg:text-6xl font-bold animate-slideInLeft">
+            Empowering You
+          </h1>
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold pb-3 animate-slideInRight text-white">
+            to Build <span className="text-green-600">with Ease</span>
+          </h2>
+          <p className="text-white font-semibold text-lg sm:text-xl lg:text-2xl animate-slideInLeft">
+            Thriving Together in the Future You Create
+          </p>
+        </div>
       </div>
     </div>
   );
